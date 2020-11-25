@@ -62,9 +62,55 @@ body
                 background: var(--yellow-color)
                 left: 0
                 bottom: -14px
-                
+
             a.btn
                 background: var(--yellow-color)
                 color: var(--light-color)
                 border-radius: 24px
                 padding: 14px 30px
+
+.hero-container
+    height: 100vh
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+    .left
+
+        flex: 1
+
+        h1
+            font-family: "Montserrat", sans-serif
+            font-size: 30px
+            margin: 8px 0 28px 0
+
+        .jj
+            color: var(--yellow-color)
+
+    .right
+        padding-right: 30px
+
+    .polygon1
+        position: absolute
+        z-index: -1
+        top: 100px
+        left: 240px
+
+    .polygon2
+        position: absolute
+        z-index: -1
+        top: 200px
+        left: 480px
+    
+    .polygon3
+        position: absolute
+        z-index: -1
+        top: 80px
+        right: 190px
+
+.hero-bg
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    z-index: -1

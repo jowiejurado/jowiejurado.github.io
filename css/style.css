@@ -74,4 +74,51 @@ body {
   padding: 14px 30px;
 }
 
+.hero-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-container .left {
+  flex: 1;
+}
+.hero-container .left h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  margin: 8px 0 28px 0;
+}
+.hero-container .left .jj {
+  color: var(--yellow-color);
+}
+.hero-container .right {
+  padding-right: 30px;
+}
+.hero-container .polygon1 {
+  position: absolute;
+  z-index: -1;
+  top: 100px;
+  left: 240px;
+}
+.hero-container .polygon2 {
+  position: absolute;
+  z-index: -1;
+  top: 200px;
+  left: 480px;
+}
+.hero-container .polygon3 {
+  position: absolute;
+  z-index: -1;
+  top: 80px;
+  right: 190px;
+}
+
+.hero-bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
 /*# sourceMappingURL=style.css.map */
