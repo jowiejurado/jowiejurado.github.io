@@ -37,6 +37,8 @@ body {
   z-index: 200;
   width: calc(1152px - 200px);
   top: 28px;
+  animation: fadeDown 1000ms forwards;
+  opacity: 0;
 }
 .desktop-nav .logo img {
   max-width: 36px;
@@ -85,8 +87,11 @@ body {
 }
 .hero-container .left h1 {
   font-family: "Montserrat", sans-serif;
-  font-size: 30px;
+  font-size: 36px;
   margin: 8px 0 28px 0;
+  animation: fadeToRight 800ms forwards cubic-bezier(0.22, 0.32, 0, 1.54);
+  opacity: 0;
+  animation-delay: 800ms;
 }
 .hero-container .left .jj {
   color: var(--yellow-color);
@@ -106,7 +111,7 @@ body {
 .hero-container .polygon2 {
   position: absolute;
   z-index: -1;
-  top: 310px;
+  top: 210px;
   left: 500px;
 }
 .hero-container .polygon3 {
@@ -115,6 +120,15 @@ body {
   top: 80px;
   left: 620px;
 }
+.hero-container .polygon1, .hero-container .polygon2, .hero-container .polygon3 {
+  opacity: 0;
+  animation: fadeIn, rotate;
+  animation-duration: 800ms, 80s;
+  animation-delay: 1800ms;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in, linear;
+}
 
 .hero-bg {
   position: absolute;
@@ -122,6 +136,40 @@ body {
   left: 0;
   width: 100%;
   z-index: -1;
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeToRight {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
