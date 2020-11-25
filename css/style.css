@@ -94,6 +94,9 @@ body {
 .hero-container .right {
   padding-right: 30px;
 }
+.hero-container .right img {
+  width: 65vh;
+}
 .hero-container .polygon1 {
   position: absolute;
   z-index: -1;
@@ -103,14 +106,14 @@ body {
 .hero-container .polygon2 {
   position: absolute;
   z-index: -1;
-  top: 200px;
-  left: 480px;
+  top: 310px;
+  left: 500px;
 }
 .hero-container .polygon3 {
   position: absolute;
   z-index: -1;
   top: 80px;
-  right: 190px;
+  left: 620px;
 }
 
 .hero-bg {
