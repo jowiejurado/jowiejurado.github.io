@@ -109,11 +109,8 @@ section p {
 .hero-container .left .jj {
   color: var(--yellow-color);
 }
-.hero-container .right {
-  padding-right: 30px;
-}
 .hero-container .right img {
-  width: 65vh;
+  width: 90vh;
   opacity: 0;
   animation: fadeIn 1000ms forwards;
 }
@@ -231,6 +228,10 @@ section .project-gallery {
 section .project-gallery img {
   width: 100%;
   object-fit: cover;
+}
+
+.profile {
+  width: 40%;
 }
 
 @keyframes fadeDown {
