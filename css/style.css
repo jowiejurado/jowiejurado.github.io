@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --dark-color: #242423;
   --light-color: #FEFEFE;
@@ -35,6 +39,21 @@ section p {
   width: 1152px;
   margin: 0 auto;
   padding: 0 100px;
+}
+
+a.btn.yellow {
+  background: var(--yellow-color);
+  color: var(--light-color);
+  border-radius: 24px;
+  padding: 14px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 400ms;
+  display: inline-block;
+}
+
+a.btn.yellow:hover {
+  background: var(--yellow-color-hover);
 }
 
 .desktop-nav {
@@ -87,6 +106,9 @@ section p {
   color: var(--light-color);
   border-radius: 24px;
   padding: 14px 30px;
+}
+.desktop-nav .menu-items li a.btn:hover {
+  background: var(--yellow-color-hover);
 }
 
 .hero-container {
@@ -220,7 +242,7 @@ section .about-section img, section .section-content img {
 }
 section .project-gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 40px 18px;
   margin-bottom: 42px;
   align-items: center;
@@ -232,6 +254,11 @@ section .project-gallery img {
 
 .profile {
   width: 40%;
+}
+
+footer {
+  background: var(--dark-color);
+  color: var(--light-color);
 }
 
 @keyframes fadeDown {

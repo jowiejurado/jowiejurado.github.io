@@ -1,3 +1,6 @@
+html
+    scroll-behavior: smooth
+    
 :root
     --dark-color: #242423
     --light-color: #FEFEFE
@@ -31,6 +34,19 @@ section
     width: 1152px
     margin: 0 auto
     padding: 0 100px
+
+a.btn.yellow
+    background: var(--yellow-color)
+    color: var(--light-color)
+    border-radius: 24px
+    padding: 14px 30px
+    text-decoration: none
+    font-weight: bold
+    transition: background-color 400ms
+    display: inline-block
+
+a.btn.yellow:hover
+    background: var(--yellow-color-hover)
 
 .desktop-nav
     display: flex
@@ -81,6 +97,9 @@ section
                 color: var(--light-color)
                 border-radius: 24px
                 padding: 14px 30px
+
+            a.btn:hover
+                background: var(--yellow-color-hover)
 
 .hero-container
     height: 100vh
@@ -215,7 +234,7 @@ section
     
     .project-gallery
         display: grid
-        grid-template-columns: 1fr 1fr 1fr
+        grid-template-columns: 1fr 1fr 1fr 1fr
         grid-gap: 40px 18px
         margin-bottom: 42px
         align-items: center
@@ -225,6 +244,11 @@ section
             object-fit: cover
 .profile
     width: 40%
+
+footer
+    background: var(--dark-color)
+    color: var(--light-color)
+    
 @keyframes fadeDown
     from
         opacity: 0
