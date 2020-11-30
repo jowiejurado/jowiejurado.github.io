@@ -248,7 +248,55 @@ section
 footer
     background: var(--dark-color)
     color: var(--light-color)
+    margin-top: 100px
+    padding-bottom: 30px
+
+    a
+        color: var(--light-color)
+        text-decoration: none
     
+    a:hover
+        text-decoration: underline
+
+.footer-container
+    display: flex
+    justify-content: space-between
+    padding: 100px 0 32px 0
+
+    .footer-nav p
+        margin: 0
+
+    .logo
+        align-self: center
+
+    ul
+        margin-top: 24px
+        padding: 0
+        list-style: none
+
+        li
+            margin: 16px 0
+
+    .footer-social
+        margin: 30px 0 24px 0
+
+        a
+            text-decoration: none
+            margin: 0 15px
+
+            img
+                transition: 500ms
+
+            img:hover
+                transform: scale(1.2)
+
+        a:first-child
+            margin-left: 0
+
+.copyright
+    text-align: center
+        
+
 @keyframes fadeDown
     from
         opacity: 0
