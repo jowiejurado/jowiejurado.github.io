@@ -75,6 +75,9 @@ a.btn.yellow:hover {
 .desktop-nav .logo img {
   max-width: 36px;
 }
+.desktop-nav .menu-icon {
+  display: none;
+}
 .desktop-nav .menu-items {
   display: flex;
   list-style: none;
@@ -310,6 +313,106 @@ footer a:hover {
   text-align: center;
 }
 
+@media (max-width: 650px) {
+  .wrapper {
+    padding: 0;
+    width: auto;
+  }
+
+  .hero-container .polygon3 {
+    display: none;
+  }
+  .hero-container .right {
+    display: none;
+  }
+  .hero-container .left {
+    padding: 50px;
+  }
+  .hero-container .left h1 {
+    font-size: 30px;
+  }
+
+  .desktop-nav {
+    width: calc( 100% - 16px );
+    margin-left: 16px;
+    padding: 4px 30px;
+  }
+  .desktop-nav .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+  .desktop-nav .menu-items {
+    display: none;
+  }
+  .desktop-nav .logo img {
+    height: 36px;
+  }
+
+  .brands-section {
+    padding: 20px;
+    margin: 16px;
+  }
+  .brands-section h2 {
+    font-size: 28px;
+  }
+  .brands-section h2::after {
+    width: 30px;
+    transform: translateX(-30px);
+    top: 33px;
+  }
+  .brands-section .brands-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .brands-section .brands-container img {
+    width: 40%;
+  }
+
+  section {
+    padding: 100px 30px 0 30px;
+  }
+  section h2 {
+    font-size: 28px;
+  }
+  section h2::after {
+    width: 30px;
+    transform: translateX(-30px);
+    top: 33px;
+  }
+
+  .about-section .section-content {
+    flex-direction: column;
+  }
+  .about-section .section-content img {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  section .project-gallery {
+    grid-template-columns: 1fr;
+  }
+  section .project-gallery img {
+    height: 240px;
+  }
+  section .project-gallery img.hide {
+    display: none;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 0;
+  }
+  .footer-container .logo {
+    order: 2;
+  }
+  .footer-container .footer-nav {
+    margin-top: 80px;
+  }
+  .footer-container .footer-nav p {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+}
 @keyframes fadeDown {
   from {
     opacity: 0;
